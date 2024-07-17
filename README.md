@@ -1,65 +1,63 @@
-# Awesome Cybersecurity Blue Team [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+# Awesome Cybersecurity Blue Team PT-BR 🇧🇷
 
-> A collection of awesome resources, tools, and other shiny things for cybersecurity blue teams.
+> Uma coleção de incriveis recursos, ferramentas e outras coisas brilhantes para blue team. Todos os créditos para https://github.com/fabacab/awesome-cybersecurity-blueteam. Todos os links redirecionadores permanecem originais, portanto, não traduzidos.
 
-[Cybersecurity blue teams](https://en.wikipedia.org/wiki/Blue_team_(computer_security)) are groups of individuals who identify security flaws in information technology systems, verify the effectiveness of security measures, and monitor the systems to ensure that implemented defensive measures remain effective in the future. While not exclusive, this list is heavily biased towards [Free Software](https://www.gnu.org/philosophy/free-sw.html) projects and against proprietary products or corporate services. For offensive TTPs, please see [awesome-pentest](https://github.com/fabacab/awesome-pentest).
+["Blue team"](https://en.wikipedia.org/wiki/Blue_team_(computer_security)) se refere ao grupo de individuos que identificam falhas de segurança em sistemas de tecnologia da informação, verificam a eficácia de medidas de segurança, e monitoram os sistemas para garantir que as medidas defensivas implementadas permaneçam efetivas no futuro. Embora não seja exclusiva, esta lista é formente inclinada em favor de projetos de [Software Livre](https://www.gnu.org/philosophy/free-sw.html) e contra produtos priprietários e serviços corporativos. Para táticas, técnincas e procedimentos (TTPs) ofensivos, consulte [awesome-pentest](https://github.com/fabacab/awesome-pentest) (repositório não traduzido).
 
-Your contributions and suggestions are heartily ♥ welcome. (✿◕‿◕). Please check the [Contributing Guidelines](CONTRIBUTING.md) for more details. This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+Muitos profissionais de cibersegurança facilitam a violência racista do estado, de forma consciente ou incosnciente, ao fornecer serviços para as agências policias locais, estaduais e federais, ou ao cooperar com instituições semelhantes que o fazem. Esse mal frequentemente ocorre através do mecanismo coercitivo do emprego, sob ameaça de falta de acesso a comida, abrigo ou cuidados de saúde. Apesar da disponibilidade pública desta lista, a intenção e esperança do mantenedor é que ela apoie as pessoas e organizações que trabalham para combater esse mal massivo, embora banal.
 
-Many cybersecurity professionals enable racist state violence, wittingly or unwittingly, by providing services to local, state, and federal policing agencies or otherwise cooperating with similar institutions who do so. This evil most often happens through the coercive mechanism of employment under threat of lack of access to food, shelter, or healthcare. Despite this list's public availability, it is the maintainer's intention and hope that this list supports the people and organizations who work to counter such massive albeit banal evil.
+![Imagem de punho erguido composto pelos nomes das pessoas negras assassinadas pelo violencia policia racista financiada pelo contribuente.](https://web.archive.org/web/20201028021653if_/https://lauerrealtygroup.com/wp-content/uploads/2020/06/BLM-FIST-scaled.jpg)
 
-![Image of a raised fist composed of the names of Black people murdered by taxpayer-funded racist police violence.](https://web.archive.org/web/20201028021653if_/https://lauerrealtygroup.com/wp-content/uploads/2020/06/BLM-FIST-scaled.jpg)
-
-![Image of a "Blue Lives Matter" flag with the thin blue line being peeled away to reveal a Nazi swastika underneath.](https://web.archive.org/web/20201123181815if_/https://i.redd.it/86pl28p0dl631.jpg)
+![Imagem de bandeira "Blue Lives Matter" com uma fina linha azul sendo retirada para revelar uma suástica nazista por baixo.](https://web.archive.org/web/20201123181815if_/https://i.redd.it/86pl28p0dl631.jpg)
 
 **[DEFUND THE POLICE.](https://defundthepolice.org/)**
 
-## Contents
+## Conteúdos
 
-- [Automation and Convention](#automation-and-convention)
-  - [Code libraries and bindings](#code-libraries-and-bindings)
-  - [Security Orchestration, Automation, and Response (SOAR)](#security-orchestration-automation-and-response-soar)
-- [Cloud platform security](#cloud-platform-security)
-  - [Distributed monitoring](#distributed-monitoring)
+- [Automação e Convenção](#automation-and-convention)
+  - [Bibliotecas de código e "ligações" (bindings)](#code-libraries-and-bindings)
+  - [Orquestração, Automação, e Resposta de Segurança (SOAR)](#security-orchestration-automation-and-response-soar)
+- [Segurança de plataformas na nuvem](#cloud-platform-security)
+  - [Monitoramento distribuido](#distributed-monitoring)
   - [Kubernetes](#kubernetes)
-  - [Service meshes](#service-meshes)
-- [Communications security (COMSEC)](#communications-security-comsec)
+  - ["Malhas" (meshes) de serviço](#service-meshes)
+- [Segurança de comunicações (COMSEC)](#communications-security-comsec)
 - [DevSecOps](#devsecops)
-  - [Application or Binary Hardening](#application-or-binary-hardening)
-  - [Compliance testing and reporting](#compliance-testing-and-reporting)
-  - [Dependency confusion](#dependency-confusion)
+  - [Fortificações de aplicações ou binários](#application-or-binary-hardening)
+  - [Teste e relatório de conformidade (Compliance)](#compliance-testing-and-reporting)
+  - [Confusão de dependências](#dependency-confusion)
   - [Fuzzing](#fuzzing)
-  - [Policy enforcement](#policy-enforcement)
-  - [Supply chain security](#supply-chain-security)
+  - [Aplicações de políticas](#policy-enforcement)
+  - [Segurança em cadeias de suprimentos](#supply-chain-security)
 - [Honeypots](#honeypots)
   - [Tarpits](#tarpits)
-- [Host-based tools](#host-based-tools)
+- [Ferramentas baseadas em host](#host-based-tools)
   - [Sandboxes](#sandboxes)
-- [Identity and AuthN/AuthZ](#identity-and-authnauthz)
-- [Incident Response tools](#incident-response-tools)
-  - [IR management consoles](#ir-management-consoles)
-  - [Evidence collection](#evidence-collection)
-- [Network perimeter defenses](#network-perimeter-defenses)
-  - [Firewall appliances or distributions](#firewall-appliances-or-distributions)
-- [Operating System distributions](#operating-system-distributions)
-- [Phishing awareness and reporting](#phishing-awareness-and-reporting)
-- [Preparedness training and wargaming](#preparedness-training-and-wargaming)
-  - [Post-engagement analysis and reporting](#post-engagement-analysis-and-reporting)
-- [Security configurations](#security-configurations)
-- [Security monitoring](#security-monitoring)
-  - [Endpoint Detection and Response (EDR)](#endpoint-detection-and-response-edr)
-  - [Network Security Monitoring (NSM)](#network-security-monitoring-nsm)
-  - [Security Information and Event Management (SIEM)](#security-information-and-event-management-siem)
-  - [Service and performance monitoring](#service-and-performance-monitoring)
-  - [Threat hunting](#threat-hunting)
-- [Threat intelligence](#threat-intelligence)
+- [Identidade e AuthN/AuthZ](#identity-and-authnauthz)
+- [Ferramentas de resposta a incidentes](#incident-response-tools)
+  - [Consoles de gerenciamento de IR](#ir-management-consoles)
+  - [Coleta de evidências](#evidence-collection)
+- [Defesas de perímetro de rede](#network-perimeter-defenses)
+  - [Appliances ou distribuições de firewall](#firewall-appliances-or-distributions)
+- [Distribuições de sistema operacional](#operating-system-distributions)
+- [Conscientização e relatórios de phishing](#phishing-awareness-and-reporting)
+- [Treinamento de preparação e wargaming](#preparedness-training-and-wargaming)
+  - [Análise e relatório pós-engajamento](#post-engagement-analysis-and-reporting)
+- [Configurações de segurança](#security-configurations)
+- [Monitoramento de segurança](#security-monitoring)
+  - [Detecção e resposta em endpoints (EDR)](#endpoint-detection-and-response-edr)
+  - [Monitoramento de segurança de rede (NSM)](#network-security-monitoring-nsm)
+  - [Gerenciamento de informações e eventos de segurança (SIEM)](#security-information-and-event-management-siem)
+  - [Monitoramente de serviço e desempenho](#service-and-performance-monitoring)
+  - [Busca por ameaças](#threat-hunting)
+- [Inteligência de ameaças](#threat-intelligence)
   - [Fingerprinting](#fingerprinting)
-  - [Threat signature packages and collections](#threat-signature-packages-and-collections)
-- [Tor Onion service defenses](#tor-onion-service-defenses)
-- [Transport-layer defenses](#transport-layer-defenses)
-  - [Overlay and Virtual Private Networks (VPNs)](#overlay-and-virtual-private-networks-vpns)
-- [macOS-based defenses](#macos-based-defenses)
-- [Windows-based defenses](#windows-based-defenses)
+  - [Pacotes e coleções de assinaturas de ameaças](#threat-signature-packages-and-collections)
+- [Defesas de serviços Onion do Tor](#tor-onion-service-defenses)
+- [Defesas de camada de transporte](#transport-layer-defenses)
+  - [Redes sobrepostas e Redes Privadas Virtuais (VPNs)](#overlay-and-virtual-private-networks-vpns)
+- [Defesas baseadas em macOS](#macos-based-defenses)
+- [Defesas baseadas em Windows](#windows-based-defenses)
   - [Active Directory](#active-directory)
 
 ## Automation and Convention
