@@ -62,14 +62,14 @@ Muitos profissionais de cibersegurança facilitam a violência racista do estado
 
 ## Automation and Convention
 
-- [Ansible Lockdown](https://ansiblelockdown.io/) - Curated collection of information security themed Ansible roles that are both vetted and actively maintained.
-- [Clevis](https://github.com/latchset/clevis) - Plugable framework for automated decryption, often used as a Tang client.
-- [DShell](https://github.com/USArmyResearchLab/Dshell) - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.
-- [Dev-Sec.io](https://dev-sec.io/) - Server hardening framework providing Ansible, Chef, and Puppet implementations of various baseline security configurations.
-- [Password Manager Resources](https://github.com/apple/password-manager-resources) - Collaborative, crowd-sourced data and code to make password management better.
-- [peepdf](https://eternal-todo.com/tools/peepdf-pdf-analysis-tool) - Scriptable PDF file analyzer.
-- [PyREBox](https://talosintelligence.com/pyrebox) - Python-scriptable reverse engineering sandbox, based on QEMU.
-- [Watchtower](https://containrrr.dev/watchtower/) - Container-based solution for automating Docker container base image updates, providing an unattended upgrade experience.
+- [Ansible Lockdown](https://ansiblelockdown.io/) - Coleção curada de papéis Ansible com temas de segurança da informação que são  verificados e mantidos ativamente.
+- [Clevis](https://github.com/latchset/clevis) - Estrutura plugável para descriptografia automatizada, frequentemente usada como um cliente Tang.
+- [DShell](https://github.com/USArmyResearchLab/Dshell) - Estrutura extensível de análise forense de rede escrita em Python que permite o rápido desenvolvimento de plugins para suportar a dissecação de capturas de pacotes de rede.
+- [Dev-Sec.io](https://dev-sec.io/) - Estrutura de "endurecimento" de servidor que fornece implementações Ansible, Chef e Puppet de várias configurações de segurança básicas.
+- [Password Manager Resources](https://github.com/apple/password-manager-resources) - Dados e código colaborativos e crowd-sourced para melhorar a gestão de senhas.
+- [peepdf](https://eternal-todo.com/tools/peepdf-pdf-analysis-tool) - Analisador de arquivos PDF scriptável.
+- [PyREBox](https://talosintelligence.com/pyrebox) - Sandbox de engenharia reversa scriptável em Python, baseado em QEMU.
+- [Watchtower](https://containrrr.dev/watchtower/) - Solução baseada em contêineres para automatizar atualizações de imagens base de contêineres Docker, proporcionando uma experiência de upgrade sem supervisão.
 
 ### Code libraries and bindings
 
