@@ -49,8 +49,8 @@ Muitos profissionais de cibersegurança facilitam a violência racista do estado
   - [Monitoramento de segurança de rede (NSM)](#network-security-monitoring-nsm)
   - [Gerenciamento de informações e eventos de segurança (SIEM)](#security-information-and-event-management-siem)
   - [Monitoramente de serviço e desempenho](#service-and-performance-monitoring)
-  - [Busca por ameaças](#threat-hunting)
-- [Inteligência de ameaças](#threat-intelligence)
+  - [Threat Hunting](#threat-hunting)
+- [Threat Intelligence](#threat-intelligence)
   - [Fingerprinting](#fingerprinting)
   - [Pacotes e coleções de assinaturas de ameaças](#threat-signature-packages-and-collections)
 - [Defesas de serviços Onion do Tor](#tor-onion-service-defenses)
@@ -71,21 +71,21 @@ Muitos profissionais de cibersegurança facilitam a violência racista do estado
 - [PyREBox](https://talosintelligence.com/pyrebox) - Sandbox de engenharia reversa scriptável em Python, baseado em QEMU.
 - [Watchtower](https://containrrr.dev/watchtower/) - Solução baseada em contêineres para automatizar atualizações de imagens base de contêineres Docker, proporcionando uma experiência de upgrade sem supervisão.
 
-### Code libraries and bindings
+### Bibliotecas de código e bindings
 
-- [MultiScanner](https://github.com/mitre/multiscanner) - File analysis framework written in Python that assists in evaluating a set of files by automatically running a suite of tools against them and aggregating the output.
-- [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal) - PowerShell interface to VirusTotal.com APIs.
-- [censys-python](https://github.com/censys/censys-python) - Python wrapper to the Censys REST API.
-- [libcrafter](https://github.com/pellegre/libcrafter) - High level C++ network packet sniffing and crafting library.
-- [python-dshield](https://github.com/rshipp/python-dshield) - Pythonic interface to the Internet Storm Center/DShield API.
-- [python-sandboxapi](https://github.com/InQuest/python-sandboxapi) - Minimal, consistent Python API for building integrations with malware sandboxes.
-- [python-stix2](https://github.com/oasis-open/cti-python-stix2) - Python APIs for serializing and de-serializing Structured Threat Information eXpression (STIX) JSON content, plus higher-level APIs for common tasks.
+- [MultiScanner](https://github.com/mitre/multiscanner) - Framework de análise de arquivos escrito em Python que auxilia na avaliação de um conjunto de arquivos, executando automaticamente um conjunto de ferramentas contra eles e agregando a saída.
+- [Posh-VirusTotal](https://github.com/darkoperator/Posh-VirusTotal) - Interface PowerShell para as APIs do VirusTotal.com.
+- [censys-python](https://github.com/censys/censys-python) - Wrapper Python para a API REST do Censys.
+- [libcrafter](https://github.com/pellegre/libcrafter) - Biblioteca de alto nível em C++ para captura e criação de pacotes de rede.
+- [python-dshield](https://github.com/rshipp/python-dshield) - Interface Pythonic para a API do Internet Storm Center/DShield.
+- [python-sandboxapi](https://github.com/InQuest/python-sandboxapi) - API Python minimalista e consistenta para construir integrações com sandboxes de malware.
+- [python-stix2](https://github.com/oasis-open/cti-python-stix2) - APIs em Python para serialização e desserialização de conteúdo JSON do Structured Threat Information eXpression (STIX), além de APIs de nível superior para tarefas comuns.
 
-### Security Orchestration, Automation, and Response (SOAR)
+### Orquestração, Automação e Resposta em Segurança (SOAR)
 
-See also [Security Information and Event Management (SIEM)](#security-information-and-event-management-siem), and [IR management consoles](#ir-management-consoles).
+Veja também [Gerenciamento de Eventos e Informações de Segurança (SIEM)](#security-information-and-event-management-siem), e [Consoles de Gerenciamento de Resposta a Incidentes](#ir-management-consoles).
 
-- [Shuffle](https://shuffler.io/) - Graphical generalized workflow (automation) builder for IT professionals and blue teamers.
+- [Shuffle](https://shuffler.io/) - Construtor gráfico de fluxos de trabalho (automação) generalizados para profissionais de TI e blue teamers.
 
 ## Cloud platform security
 
